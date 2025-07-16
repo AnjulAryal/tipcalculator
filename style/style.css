@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+}
+:root{
+    --Green400: hsl(172, 86%, 36%);
+    --Green900: hsl(183, 100%, 15%);
+    --Grey500: hsl(186, 14%, 43%);
+    --Grey400: hsl(184, 14%, 56%);
+    --Grey200: hsl(185, 41%, 84%);
+    --Grey50: hsl(189, 47%, 97%);
+    --White: hsl(0, 100%, 100%);
+};
+body{
+}
+.bill p{
+    margin-bottom: 20px;
+}
+main{
+    background-color: var(--Grey200);
+}
+.header{
+    padding: 30px;
+}
+.header div{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: var(--Green900);
+}
+.calculator{
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 30px;
+}
+.dollar-img{
+    display: flex;
+    justify-content: center;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--Grey50);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bill-color{
+    background: var(--Grey50);
+}
+.billamount{
+    border: none;
+    outline: none;
+    padding-left: 240px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}
+.tipbox-container{
+    background-color: var(--Green900);
+    color: var(--White);
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px; 
+    min-width: 100px;
+    height: 50px;
+}
+.tipbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.tipbox-container input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+}
+.custom-box{
+    background-color: var(--Grey200);
+    font-size: 20px;
+    font-weight: bold;
+}
+.row3 p{
+    color: var(--Green900);
+    margin-bottom: 10px;
+}
+.people-input{
+    background-color: var(--Grey50);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 0px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.people{
+    width: 100%;
+    padding-left: 240px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--Green900);
+}
+.tips,.totals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reset-button{
+    background-color: var(--Green400);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.amount{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--Green400);
+}
+
+.row4{
+    background-color: var(--Green900);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+.row2 p{
+    margin-bottom: 10px;
+}
+.tips p ,.totals p{
+    color: var(--Grey400);
+}
+.button{
+    cursor: pointer;
+}
+.row3 p{
+    margin-top: 30px;
+}
+.button:hover{
+    background-color: var(--Green400);
+}
+
+.errors{
+    display: none;
+}
+.error{
+    display: block;
+    color: red;
+}
+
+.errorhandle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.error-active{
+    border: solid 2px red;
+}
+@media screen  and (min-width:1024px) {
+    main{
+        height: 100vh;
+    }
+    body{
+    }
+    .calculator{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       column-gap: 30px;
+       padding: 20px;
+    }
+    .content-adjust{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        padding-top: 60px;
+        margin-bottom: 30px;
+    }
+    .row4{
+        justify-content: space-between;
+        padding: 30px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .amounts{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .tipbox{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    .column1{
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-between;
+        row-gap: 30px;
+        max-width: 474px;
+    }
+    .reset-button{
+        max-width: 350px;
+        margin: 25px;
+    }
+    .billamount,.people{
+        padding-left: 350px;
+        font-size: 20px;
+    }
+
+}

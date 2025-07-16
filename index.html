@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator App By Anjul Aryal</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <div>SPLI</div>
+      <div>TTER</div>
+    </div>
+    <div class="content-adjust">
+      <div class="calculator">
+        <div class="column1">
+          <div class="bill row1">
+            <p>Bill</p>
+            <div class="input-box bill-color">
+                <img src="./images/icon-dollar.svg" alt="" srcset="">
+                <input type="number" placeholder="0" class="billamount bill-color" value="">
+            </div>
+          </div>
+          <div class="row2">
+            <p>Select Tip %</p>
+            <div class="tipbox">
+              <div class="tipbox-container button" percentage="5">
+                5%
+              </div>
+              <div class="tipbox-container button" percentage="10">
+                10% 
+              </div>
+              <div class="tipbox-container button" percentage="15">
+                15% 
+              </div>
+              <div class="tipbox-container button" percentage="25">
+                25% 
+              </div>
+              <div class="tipbox-container button" percentage="50">
+                50% 
+              </div>
+              <div class="tipbox-container">
+                <input type="text" placeholder="Custom" class="custom-box ">
+              </div>
+            </div>
+          </div>
+          <div class="row3">
+            <div class="errorhandle">
+              <p>Number of People</p>
+              <span class="errors">Can't be zero</span>
+            </div>
+            <div class="people-container people-input ">
+              <img src="./images/icon-person.svg" alt="" srcset="">
+              <input type="number" placeholder="0" class="people-input people ">
+            </div>
+          </div>
+        </div>
+        <div class="row4">
+          <div class="amounts">
+            <div class="tip-amount">
+              <div class="tips">
+                <div>
+                  <h3>Tip Amount</h3>
+                  <p>/ person</p>
+                </div>
+                <div class="amount tip-amounts">
+                  $0.00
+                </div>
+              </div>
+            </div>
+            <div class="total-amount">
+              <div class="totals">
+                <div>
+                  <h3>Total</h3>
+                  <p>/ person</p>
+                </div>
+                <div class="amount total-amounts">
+                  $0.00
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reset-button">
+            RESET
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
